@@ -1,188 +1,100 @@
-Contribution: 2018-03-09 00:00
+# simple-react-app
 
-Contribution: 2018-03-09 00:01
+[![forthebadge](https://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](https://forthebadge.com)
 
-Contribution: 2018-03-09 00:02
+But you still get it.
 
-Contribution: 2018-03-09 00:03
+Simple base app with react, react-router v4, hot-reload &amp; sass.
 
-Contribution: 2018-03-09 00:04
+`npm i -g simple-react-app` to install the package.
 
-Contribution: 2018-03-09 00:05
+`simple-react-app folderName` to start the boilerplate into `folderName` folder.
 
-Contribution: 2018-03-09 00:06
+Or if you're using `npm@5.2.0` or above, you can simply run `npx simple-react-app folderName`, without the need to install the package globally.
 
-Contribution: 2018-03-12 00:00
+## What is this
+This is a base project that you can use to jumpstart your react apps, it works similarly to create-react-app, just install the package globally and use it to create as many projects as you want (check How to install for detailed instructions).
+It includes the last react spec as of today 01/03/2018, and uses react-router v4 to handle routes.
+Style is handled by sass/scss, Bundle is generated with webpack 4.
+NB: this is just front end, you can use whatever backend language you are most comfortable with.
 
-Contribution: 2018-03-12 00:01
+## How to install
+You can use both npm or yarn, the version I used to create this project are:
 
-Contribution: 2018-03-12 00:02
+```
+$ node -v ; npm -v ; yarn -v
+v8.8.1
+5.4.2
+1.2.1
+```
+If you just freshly installed yarn/npm you are good to go, else you might need to upgrade, for npm I use `n`
 
-Contribution: 2018-03-12 00:03
+```
+npm install -g n
+```
+to install it and after that select at least the stable version (what I used).
 
-Contribution: 2018-03-12 00:04
+```
+n stable
+```
 
-Contribution: 2018-03-12 00:05
+and now you have the latest stable version of node&npm.
 
-Contribution: 2018-03-12 00:06
 
-Contribution: 2018-03-12 00:07
+`npm i -g simple-react-app` to install this package globally, from there you will be able to jumpstart as many boilerplates as you wish.
 
-Contribution: 2018-03-13 00:00
 
-Contribution: 2018-03-13 00:01
+`simple-react-app folderName` to create a react boilerplate on the `folderName` folder. By default all dependencies are already installed, just `cd folderName` and start hacking.
 
-Contribution: 2018-03-14 00:00
 
-Contribution: 2018-03-14 00:01
+`yarn start`/`npm start` to start dev server with hot reload, it's live on `localhost:3000`.
 
-Contribution: 2018-03-15 00:00
 
-Contribution: 2018-03-15 00:01
+`yarn run build`/`npm run build` to build prod bundle, it includes both treeshaking and uglify to optimize the code as much as possible.
 
-Contribution: 2018-03-15 00:02
 
-Contribution: 2018-03-15 00:03
+`yarn test`/`npm test` run the tests with Jest and Enzyme, by default the test included only check for the correct render of base components & routes, all are passing.
 
-Contribution: 2018-03-19 00:00
 
-Contribution: 2018-03-19 00:01
+## Project structure
 
-Contribution: 2018-03-19 00:02
+The boilerplate structure and files are the same as this repo minus the *bin* folder, everything else is exactly the same.
 
-Contribution: 2018-03-19 00:03
+```
+*root*
+|
+├── */src/*
+│   ├── */assets/* where images and stuff are stored
+│   ├── */containers/* react-router jsx pages
+│   ├── *App.jsx* main layout
+│   ├── *Routes.jsx* front-end routes
+│   ├── *index.html* entry point
+│   ├── *index.jsx* javascript entry point
+│   ├── *style.scss* styling
+│   └── */tests/* contains test environment (Jest + Enzyme)
+│       ├── */__mock__/* contains setup to provide a valid path for imports
+│       ├── */_tests__/* the actual tests
+│       └── *setup.js* setup for enzyme for react 16
+├── *package.json* the whole package.json with every dependency and script, nothing is kept hidden
+├── *.eslintrc* eslint config
+├── *.babelrc* babel config (polyfills)
+├── *webpack.config.js* webpack config, it has a dev and prod environment
+└── *README.md* this file
+```
 
-Contribution: 2018-03-19 00:04
 
-Contribution: 2018-03-19 00:05
+## Tests
 
-Contribution: 2018-03-19 00:06
+The testing environment is written in Jest and Enzyme.
+The included tests are very basic and only check the proper render of base components + routes, there are no snapshot tests, I did not feel they were needed being the components really basic, at the first change they would need to be updated, imho setting the wrong approach of _"hey tests are broken, let's regenerate snapshots again"_.
+While still basic, the default tests are easy to manage and expand, providing a smoother curve into testing with JavaScript and React.
 
-Contribution: 2018-03-19 00:07
 
-Contribution: 2018-03-21 00:00
+## Eslint
 
-Contribution: 2018-03-21 00:01
+This project uses AirBnB Javascript specs so you can write error-free react and javasctipt code, if you use Visual Studio Code, you can install eslint from the extension tab to activate this function, other editors just google _name of the editor + eslint_ you will find how to enable it for your editor.
 
-Contribution: 2018-03-21 00:02
+## How to contribute
 
-Contribution: 2018-03-26 00:00
-
-Contribution: 2018-03-26 00:01
-
-Contribution: 2018-03-26 00:02
-
-Contribution: 2018-03-26 00:03
-
-Contribution: 2018-03-26 00:04
-
-Contribution: 2018-03-27 00:00
-
-Contribution: 2018-03-27 00:01
-
-Contribution: 2018-03-27 00:02
-
-Contribution: 2018-03-27 00:03
-
-Contribution: 2018-03-27 00:04
-
-Contribution: 2018-03-27 00:05
-
-Contribution: 2018-03-27 00:06
-
-Contribution: 2018-03-27 00:07
-
-Contribution: 2018-03-27 00:08
-
-Contribution: 2018-03-27 00:09
-
-Contribution: 2018-03-27 00:10
-
-Contribution: 2018-03-27 00:11
-
-Contribution: 2018-03-27 00:12
-
-Contribution: 2018-03-29 00:00
-
-Contribution: 2018-03-29 00:01
-
-Contribution: 2018-03-29 00:02
-
-Contribution: 2018-03-29 00:03
-
-Contribution: 2018-03-29 00:04
-
-Contribution: 2018-03-29 00:05
-
-Contribution: 2018-03-29 00:06
-
-Contribution: 2018-03-29 00:07
-
-Contribution: 2018-03-29 00:08
-
-Contribution: 2018-03-30 00:00
-
-Contribution: 2018-03-30 00:01
-
-Contribution: 2018-03-30 00:02
-
-Contribution: 2018-03-30 00:03
-
-Contribution: 2018-03-30 00:04
-
-Contribution: 2018-03-30 00:05
-
-Contribution: 2018-04-03 00:00
-
-Contribution: 2018-04-03 00:01
-
-Contribution: 2018-04-03 00:02
-
-Contribution: 2018-04-03 00:03
-
-Contribution: 2018-04-03 00:04
-
-Contribution: 2018-04-03 00:05
-
-Contribution: 2018-04-03 00:06
-
-Contribution: 2018-04-04 00:00
-
-Contribution: 2018-04-04 00:01
-
-Contribution: 2018-04-04 00:02
-
-Contribution: 2018-04-04 00:03
-
-Contribution: 2018-04-04 00:04
-
-Contribution: 2018-04-05 00:00
-
-Contribution: 2018-04-05 00:01
-
-Contribution: 2018-04-05 00:02
-
-Contribution: 2018-04-05 00:03
-
-Contribution: 2018-04-05 00:04
-
-Contribution: 2018-04-05 00:05
-
-Contribution: 2018-04-05 00:06
-
-Contribution: 2018-04-05 00:07
-
-Contribution: 2018-04-05 00:08
-
-Contribution: 2018-04-06 00:00
-
-Contribution: 2018-04-06 00:01
-
-Contribution: 2018-04-06 00:02
-
-Contribution: 2018-04-06 00:03
-
-Contribution: 2018-04-06 00:04
-
-Contribution: 2018-04-06 00:05
+I wrote a [small guide](https://medium.com/@francesco.agnoletto/how-to-not-f-up-your-local-files-with-git-part-1-e0756c88fd3c) on how to contribute and the common etiquette to follow.
 
